@@ -1,26 +1,26 @@
 [
-  {
-    "group_id": 0,
-    "color": "blueviolet",
-    "text": "Подразделение 1",
-    "counter": 3
-  },
-  {
-    "group_id": 1,
-    "color": "blue",
-    "text": "Подразделение 2",
-    "counter": 6
-  },
-  {
-    "group_id": 2,
-    "color": "violet",
-    "text": "Подразделение 3",
-    "counter": 3
-  },
-  {
-    "group_id": 3,
-    "color": "deeppink",
-    "text": "Подразделение 4",
-    "counter": 2
-  }
+    {
+        "group_id": 0,
+        "color": "darkorange",
+        "text": "Подразделение 1",
+        "counter": 2
+    },
+    {
+        "group_id": 1,
+        "color": "yellowgreen",
+        "text": "Подразделение 2",
+        "counter": 5
+    },
+    {
+        "group_id": 2,
+        "color": "skyblue",
+        "text": "Подразделение 3",
+        "counter": 4
+    },
+    {
+        "group_id": 3,
+        "color": "deeppink",
+        "text": "Подразделение 4",
+        "counter": 2
+    }
 ]
