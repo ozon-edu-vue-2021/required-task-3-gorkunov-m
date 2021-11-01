@@ -45,8 +45,17 @@ export default {
                 const legends = (await import('@/assets/data/legend.json')).default;
                 const people = (await import('@/assets/data/people.json')).default;
 
-                this.legends = legends;
                 this.people = people;
+                this.legends = legends.map((legend) => {
+                    return {
+                        ...legend,
+                        counter: tables.reduce(
+                            (count, table) =>
+                                table.group_id === legend.group_id ? count + 1 : count,
+                            0
+                        ),
+                    };
+                });
                 this.tables = tables.map((table) => {
                     return {
                         ...table,

@@ -15,11 +15,15 @@
                 </div>
             </div>
             <div class="person__info-body">
-                <div class="person__info-item"><strong>Почта:</strong> {{ person.email }}</div>
                 <div class="person__info-item">
-                    <strong>Дата регистрации:</strong><br />{{ formatedDate }}
+                    <span class="bold">Почта:</span> {{ person.email }}
                 </div>
-                <div class="person__info-item"><strong>О себе:</strong> {{ person.about }}</div>
+                <div class="person__info-item">
+                    <span class="bold">Дата регистрации:</span><br />{{ formatedDate }}
+                </div>
+                <div class="person__info-item">
+                    <span class="bold">О себе:</span> {{ person.about }}
+                </div>
             </div>
         </div>
     </div>
@@ -89,5 +93,8 @@ export default {
 }
 .person__info-item + .person__info-item {
     margin-top: 10px;
+}
+.person__info-item .bold {
+    font-weight: 700;
 }
 </style>

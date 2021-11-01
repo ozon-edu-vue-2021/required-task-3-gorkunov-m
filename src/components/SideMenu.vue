@@ -18,8 +18,8 @@
                 <div class="legend__data">
                     <Draggable v-model="legends" v-if="legends.length > 0" class="legend__items">
                         <legend-item
-                            v-for="(item, index) in legends"
-                            :key="index"
+                            v-for="item in legends"
+                            :key="item.group_id"
                             :color="item.color"
                             :text="item.text"
                             :counter="item.counter"
